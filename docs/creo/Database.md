@@ -4,14 +4,14 @@ Data is organized into rows, columns and tables, and it is indexed to make it fa
 ### Supported databases
 Creo supports connection to relational databases such as `SQLite`, `MySQL` and `PostgreSQL` and provides specific tools to easily create and test queries.
 
-The common companion of an application is usually an `SQLite` database to benefit from locally stored data that does not require a connection to an external resource like a `MySQL` or `Postgres` servers.
+The common companion of an application is usually a `SQLite` database to benefit from locally stored data that does not require a connection to an external resource like a `MySQL` or `Postgres` servers.
 
 ### Database connections
 
 ![Database connect](../images/creo/Database_connect.png)
 
-A new database connection is created dragging a database _Object_ from the bottom left _Objects_ view to _Project_ -> _Globals_.
-Then using the _Inspector_ is possible to configure the database specific properties and _Test_ the connection.
+A new database connection is created by dragging a database _Object_ from the bottom left _Objects_ view to _Project_ -> _Globals_.
+The connection is configured using the _Inspector_ to set database specific properties and _Test_ the connection.
 
 ### SQLite extra properties
 `SQLite` databases are files distributed with the application, they may be associated with an _Assets file_ and can be configured to be:
@@ -19,17 +19,17 @@ Then using the _Inspector_ is possible to configure the database specific proper
 * **persistent on a file**, the original provided DB is _copied once_ to a writeable folder and then opened.
 * **in-memory**, the DB is lost when the application quits.
 
-When it comes to SQLite databases Creo provides an extra tool to create tables and rows.
+Creo provides an extra tool to create tables and rows in SQLite databases.
 
 Tap _DB Configurator_ from the database _Inspector_ panel to open the tool.
 
 ![Database connect](../images/creo/Database_create.png)
 
-The tool is not limited to creating rows and tables but can also be used to setup constraints as well:
+The tool can create rows, tables and can also create constraints using the following:
 * by pressing the T button next to a table name.
 * by pressing the constraints buttons next to a field name.
 
-**Note:** a table primary key could be set using both ways but just one is needed. In case of miss configurations a yellow _Warning sign_ is shown at the top, click on it to read the problem's description.
+**Note:** a table's primary key could be set using both ways but just one is needed. In case of misconfigurations a yellow _Warning sign_ is shown at the top, click on it to read the problem's description.
 
 ### Database queries and dataset
 For all supported databases, Creo provides a tool to create and test static SQL queries.
